@@ -5,14 +5,13 @@ alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reload="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias ll="$(brew --prefix coreutils)/libexec/gnubin/ls -ahlF --color --group-directories-first"
-weather() { curl -4 es.wttr.in/${1:-antwerp} }
-alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
-alias c="clear"
+weather() { curl -4 es.wttr.in/manilva }
+alias quehago="echo '¯\_(ツ)_/¯' | pbcopy"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-alias sites="cd $HOME/Sites"
+alias code="cd $HOME/Code"
 
 # Laravel
 alias art="php artisan"
