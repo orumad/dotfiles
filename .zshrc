@@ -52,10 +52,13 @@ ZSH_CUSTOM=$DOTFILES
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-# plugins=(git git-extras)
+plugins=(git wd laravel5 composer osx zsh-autosuggestions zsh-syntax-highlighting)
 
 # Activate Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
+# ZSH autosuggestions & syntax highlighting
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
