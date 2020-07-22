@@ -4,6 +4,8 @@ export DOTFILES=$HOME/.dotfiles
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+export XDEBUG_CONFIG="idekey=VSCODE"
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -53,7 +55,7 @@ ZSH_CUSTOM=$DOTFILES
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git wd laravel5 composer osx zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git wd composer osx)
 
 # Activate Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
