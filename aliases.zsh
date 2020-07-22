@@ -6,22 +6,21 @@ alias reload="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias ll="$(brew --prefix coreutils)/libexec/gnubin/ls -ahlF --color --group-directories-first"
 weather() { curl -4 es.wttr.in/manilva }
-alias quehago="echo '¯\_(ツ)_/¯' | pbcopy"
+# alias quehago="echo '¯\_(ツ)_/¯' | pbcopy"
 alias myip="ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'"
+alias ip="curl ifconfig.co"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-alias code="cd $HOME/Code"
-alias backend="cd $HOME/Code/muving/backend"
 alias firmware="cd $HOME/Code/muving/firmware"
-alias dpo="cd $HOME/Code/dpocompliance"
 
 # Laravel
 alias art="php artisan"
 alias t="clear && phpunit"
 alias ams="php artisan migrate:fresh --seed"
 alias aaps="php aaps"
+
 # Composer Package development
 composer-link() {
   repositoryName=${3:-local}
@@ -59,7 +58,6 @@ wip() {
   git commit -a -m $msg
   git push origin
 }
-
 # gitignore.io
 function gi() { curl -sL https://www.gitignore.io/api/$@ ;}
 _gitignoreio_get_command_list() {
@@ -72,4 +70,4 @@ _gitignoreio () {
 compdef _gitignoreio gi
 
 # Visual Studio Code
-alias edit="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
