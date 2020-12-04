@@ -79,3 +79,6 @@ export LANG=en_US.UTF-8
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# GitHub Cli
+export GITHUB_TOKEN=96b440984e5ec6f5b781e3f70ffa5b0ec9027176
